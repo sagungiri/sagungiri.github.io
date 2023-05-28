@@ -892,195 +892,37 @@ section {
   color: var(--color-primary);
 }
 
-.menu .tab-content .menu-item {
-  -moz-text-align-last: center;
-  text-align-last: center;
+.menu .tab-content .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: ease-in-out 0.3s;
+  background: white;
+  box-shadow: 2px 0 35px 0 rgba(55, 55, 63, 0.12);
 }
 
-.menu .tab-content .menu-item .menu-img {
-  padding: 0 60px;
-  margin-bottom: 15px;
-}
-
-.menu .tab-content .menu-item h4 {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--color-secondary);
-  font-family: var(--font-secondary);
-  font-weight: 30px;
-  margin-bottom: 5px;
-}
-
-.menu .tab-content .menu-item .ingredients {
-  font-family: var(--font-secondary);
-  color: #8d8d9b;
-  margin-bottom: 5px;
-}
-
-.menu .tab-content .menu-item .price {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .section-header {
-  margin-bottom: 40px;
-}
-
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item .testimonial-content {
-  border-left: 3px solid var(--color-primary);
-  padding-left: 30px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: var(--color-default);
-  font-family: var(--font-secondary);
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #6c757d;
-  margin: 0 0 10px 0;
-  font-family: var(--font-secondary);
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #f05656;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 40px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #d1d1d7;
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-/*--------------------------------------------------------------
-# Events Section
---------------------------------------------------------------*/
-.events .container-fluid {
-  padding: 0;
-}
-
-.events .event-item {
-  background-size: cover;
-  background-position: cente;
-  min-height: 600px;
-  padding: 30px;
-}
-
-@media (max-width: 575px) {
-  .events .event-item {
-    min-height: 500px;
-  }
-}
-
-.events .event-item:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  inset: 0;
-}
-
-.events .event-item h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 5px;
-  color: #fff;
-  position: relative;
-}
-
-.events .event-item .price {
-  color: #fff;
-  border-bottom: 2px solid var(--color-primary);
+ .menu .tab-content .icon-box i {
   font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+ .menu .tab-content .icon-box h3 {
   font-weight: 700;
-  margin-bottom: 15px;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
 }
 
-.events .event-item .description {
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.9);
-  position: relative;
+ .menu .tab-content .icon-box h3 a {
+  color: #212529;
+  transition: ease-in-out 0.3s;
 }
 
-@media (min-width: 1200px) {
-  .events .swiper-slide-active + .swiper-slide {
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    z-index: 1;
-  }
+ .menu .tab-content .icon-box:hover a {
+  color: #ec2727;
 }
-
-.events .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.events .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #d1d1d7;
-  opacity: 1;
-}
-
-.events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
 /*--------------------------------------------------------------
 # Chefs Section
 --------------------------------------------------------------*/
